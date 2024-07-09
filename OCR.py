@@ -39,7 +39,7 @@ def check_envio_false():
     st.session_state.check_envio = False
 
 # Abrindo a logo da Arcelor para colocar como ícone da página
-icon_arcelor = Image.open('logo_cinza_laranja.png')
+# icon_arcelor = Image.open('logo_cinza_laranja.png')
 
 # Ajustando a largura e características da página
 st.set_page_config(page_title="Extrator De Textos", layout='centered',page_icon=icon_arcelor)
