@@ -2,11 +2,9 @@
 import pytesseract
 import cv2
 import streamlit as st
-import os 
 from pdf2image import convert_from_path
 import tempfile
 from PIL import Image
-import time
 
 # Identificação do local onde realmente se encontra o tesseract (o pip instala em lugar errado)
 pytesseract.pytesseract.tesseract_cmd = "D:\\Users\\50109192\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract.exe"
