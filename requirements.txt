@@ -1,6 +1,4 @@
-tesseract-ocr
 streamlit
-pytesseract
 opencv-python
 streamlit
 pdf2image
