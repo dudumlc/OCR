@@ -6,3 +6,4 @@ streamlit
 pdf2image
 temp
 pillow
+poppler-utils
