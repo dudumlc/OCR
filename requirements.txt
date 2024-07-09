@@ -4,5 +4,5 @@ pytesseract
 opencv-python
 streamlit
 pdf2image
-tempfile
+temp
 PIL
