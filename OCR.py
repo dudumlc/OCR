@@ -42,7 +42,7 @@ def check_envio_false():
 # icon_arcelor = Image.open('logo_cinza_laranja.png')
 
 # Ajustando a largura e características da página
-st.set_page_config(page_title="Extrator De Textos", layout='centered',page_icon=icon_arcelor)
+st.set_page_config(page_title="Extrator De Textos", layout='centered') #page_icon=icon_arcelor)
 
 # Título da página
 
