@@ -1,6 +1,5 @@
 tesseract-ocr
 streamlit
-leptonica
 pytesseract
 opencv-python
 streamlit
