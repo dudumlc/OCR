@@ -1,3 +1,4 @@
+pytesseract
 streamlit
 opencv-python
 streamlit
