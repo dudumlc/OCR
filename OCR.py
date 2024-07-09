@@ -81,8 +81,6 @@ if img_user:
                 with tempfile.NamedTemporaryFile(delete=False) as temp_file_nome_incorreto:
                     temp_file_nome_incorreto.write(img_user.getbuffer())
                     temp_file_nome_incorreto_path = temp_file_nome_incorreto.name
-                
-                st.text(temp_file_nome_incorreto_path)
 
                 # Conferência do tipo de arquivo inputado - se for png
                 if img_user.type == 'image/png':
