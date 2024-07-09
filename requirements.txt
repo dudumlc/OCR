@@ -1,2 +1,11 @@
 tesseract-ocr
 tesseract-ocr-por
+streamlit
+pytesseract
+cv2
+streamlit
+os 
+pdf2image
+tempfile
+PIL
+time
