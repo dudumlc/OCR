@@ -8,17 +8,7 @@ import shutil
 from PIL import Image
 
 # Identificação do local onde realmente se encontra o tesseract (o pip instala em lugar errado)
-pytesseract.pytesseract.tesseract_cmd = None
-
-# search for tesseract binary in path
-@st.cache_resource
-def find_tesseract_binary() -> str:
-    return shutil.which("tesseract")
-
-# set tesseract binary path
-pytesseract.pytesseract.tesseract_cmd = find_tesseract_binary()
-if not pytesseract.pytesseract.tesseract_cmd:
-    st.error("Tesseract binary not found in PATH. Please install Tesseract.")
+pytesseract.pytesseract.tesseract_cmd = ""
 
 # FUNÇÃO PARA TRANSFORMAR PDF EM PNG
 def conversor_png(arquivo):
@@ -50,10 +40,10 @@ def check_envio_false():
     st.session_state.check_envio = False
 
 # Abrindo a logo da Arcelor para colocar como ícone da página
-# icon_arcelor = Image.open('logo_cinza_laranja.png')
+icon_arcelor = Image.open('logo_cinza_laranja.png')
 
 # Ajustando a largura e características da página
-st.set_page_config(page_title="Extrator De Textos", layout='centered') #page_icon=icon_arcelor)
+st.set_page_config(page_title="Extrator De Textos", layout='centered',page_icon=icon_arcelor)
 
 # Título da página
 
