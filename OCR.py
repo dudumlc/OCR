@@ -8,11 +8,8 @@ import shutil
 from PIL import Image
 import os
 
-# Define o caminho para o executável do Tesseract dentro do repositório
-tesseract_cmd = os.path.join(os.path.dirname(__file__), 'tesseract.exe')
-
 # Identificação do local onde realmente se encontra o tesseract (o pip instala em lugar errado)
-pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
+pytesseract.pytesseract.tesseract_cmd = '/mount/src/ocr/tesseract.exe' #caminho para o streamlit
 
 # FUNÇÃO PARA TRANSFORMAR PDF EM PNG
 def conversor_png(arquivo):
@@ -29,7 +26,7 @@ def extracao_texto(nome_arquivo):
     # Leitura da imagem
     img = cv2.imread(nome_arquivo)
     # OCR da imagem lida
-    return pytesseract.image_to_string(img, lang='por')
+    return pytesseract.image_to_string(img)#lang='por')
 
 # CRIANDO INTERFACE
 
