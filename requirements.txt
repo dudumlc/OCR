@@ -1,5 +1,6 @@
 pytesseract
 streamlit
+opencv-python
 opencv-python-headless
 streamlit
 pdf2image
