@@ -7,3 +7,4 @@ pdf2image
 temp
 pillow
 poppler-utils
+pytest-shutil
