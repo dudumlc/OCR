@@ -7,7 +7,7 @@ import tempfile
 from PIL import Image
 
 # Identificação do local onde realmente se encontra o tesseract (o pip instala em lugar errado)
-pytesseract.pytesseract.tesseract_cmd = "D:\\Users\\50109192\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 
 # FUNÇÃO PARA TRANSFORMAR PDF EM PNG
 def conversor_png(arquivo):
