@@ -7,8 +7,11 @@ import tempfile
 import shutil
 from PIL import Image
 
+# Define o caminho para o executável do Tesseract dentro do repositório
+tesseract_cmd = os.path.join(os.path.dirname(__file__), 'tesseract.exe')
+
 # Identificação do local onde realmente se encontra o tesseract (o pip instala em lugar errado)
-pytesseract.pytesseract.tesseract_cmd = "C:\\Users\\Dudu_\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
 
 # FUNÇÃO PARA TRANSFORMAR PDF EM PNG
 def conversor_png(arquivo):
