@@ -6,6 +6,7 @@ from pdf2image import convert_from_path
 import tempfile
 import shutil
 from PIL import Image
+import os
 
 # Define o caminho para o executável do Tesseract dentro do repositório
 tesseract_cmd = os.path.join(os.path.dirname(__file__), 'tesseract.exe')
