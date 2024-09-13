@@ -1,10 +1,10 @@
+tesseract-ocr
+streamlit
 pytesseract
-streamlit
 opencv-python
-opencv-python-headless
 streamlit
+os 
 pdf2image
-temp
-pillow
-poppler-utils
-pytest-shutil
+tempfile
+PIL
+time
